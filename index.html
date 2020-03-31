@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AJAX</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+  <style>
+    .messages {
+      display: none;
+    }
+    .formBook {
+      display: none;
+    }
+  </style>
+</head>
+<body>
+  <h1>AJAX: Asincronous Javascript and XML</h1>
+
+  <table class="table" id="booksTable">
+    <thead>
+      <th>Titulo</th>
+      <th>Id_autor</th>
+      <th>Id_genero</th>
+    </thead>
+    <tbody>
+      
+    </tbody>
+    <input type="button" value="Cargar libros" id="loadBooks">
+    <div class="messages" id="messages">
+      <p></p>
+    </div>
+    <div class="formBook" id="formBook">
+      <hr>
+      <table>
+        <tr>
+          <td>Titulo: </td>
+          <td><input type="text" name="bookTitle" id="bookTitle"></td>
+        </tr>
+        <tr>
+          <td>Id_autor: </td>
+          <td><input type="text" name="bookAutorId" id="bookAutorId"></td>
+        </tr>
+        <tr>
+          <td>Id_genero: </td>
+          <td><input type="text" name="bookGeneroId" id="bookGeneroId"></td>
+        </tr>
+        <tr>
+          <td colspan="2"><input type="button" value="Guardar" id="bookSave"></td>
+        </tr>
+      </table>
+    </div>
+  </table>
+
+  <script
+  src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+  <script src="ajax.js"></script>
+</body>
+</html>
